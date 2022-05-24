@@ -1,0 +1,9 @@
+.container--space {
+    padding-top: var(--span-l);
+    padding-left: calc(var(--span-xl) + 5px);
+}
+
+.content--space {
+    padding-right: calc(var(--span-2xl) * 2.5 + var(--span-xs) + 5px);
+    padding-left: calc(var(--span-2xl) * 2.5 + var(--span-xs) + 5px);
+}

@@ -1,0 +1,20 @@
+.content {
+    padding-top: calc(5 * var(--span-xl));
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__heading {
+        text-align: left;
+
+        &--tertiary {
+            font-family: "Barlow Condensed";
+            font-size: calc(var(--size-l) + 4px);
+            font-weight: var(--weight-sm);
+            line-height: 34px;
+            letter-spacing: 4.724999904632568px;
+        }
+    }
+}

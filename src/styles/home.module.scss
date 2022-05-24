@@ -1,0 +1,19 @@
+.wrapper {
+    height: 100vh;
+    background-image: url(../assets/images/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @media only screen and (max-width: 1024px) {
+        background-image: url(../assets/images/home/background-home-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (max-width: 600px) {
+        background-image: url(../assets/images/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

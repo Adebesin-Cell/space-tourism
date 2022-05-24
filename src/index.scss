@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("https://db.onlinewebfonts.com/c/4da6ef5821637183493d950847443e7f?family=Bellefair");
+
+@font-face {
+  font-family: "Bellefair";
+  src: url("https://db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.eot");
+  src: url("https://db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.woff") format("woff"), url("https://db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/4da6ef5821637183493d950847443e7f.svg#Bellefair") format("svg");
+}
+
+@font-face {
+  font-family: 'Bellefair Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bellefair Regular'), url('./assets/font/Bellefair-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Bellefair Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bellefair Regular'), url('./assets/font/Bellefair-Regular.ttf') format('truetype');
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --unit: 10px;
+  --Barlow: 'Barlow', sans-serif;
+  --Bellefair-Regular: 'Bellefair Regular', sans-serif;
+
+  //font size
+
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+
+  //spacing
+
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
+
+  //font weights
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
+
+  // colors
+
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bellefair Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
