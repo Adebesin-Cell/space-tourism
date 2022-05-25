@@ -1,0 +1,24 @@
+.title {
+    padding-top: calc(var(--span-2xl) + var(--span-xs));
+
+    &__heading {
+        display: flex;
+        gap: var(--span-m);
+        font-family: "Barlow Condensed";
+        font-size: calc(var(--size-l) + 4px);
+        line-height: 34px;
+        letter-spacing: 4.724999904632568px;
+        text-align: left;
+        text-transform: uppercase;
+
+        &--light {
+            color: var(--tw__transparent-white);
+            font-weight: var(--weight-xlg);
+        }
+
+        &--bold {
+            color: var(--white);
+            font-weight: var(--weight-sm);
+        }
+    }
+}
