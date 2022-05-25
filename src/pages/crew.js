@@ -1,12 +1,12 @@
 import styles from "../styles/crew.module.scss";
-import variables from "../styles/variables.module.scss";
 import Header from "../components/header/Header";
+import Wrapper from "../components/UI/Wrapper";
 
 const CrewPage = function (props) {
   return (
-    <div className={`${styles.wrapper} ${variables["container--space"]}`}>
+    <Wrapper className={`${styles.wrapper}`}>
       <Header path={props.path} />
-    </div>
+    </Wrapper>
   );
 };
 

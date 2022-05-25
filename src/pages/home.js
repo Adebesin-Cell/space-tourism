@@ -1,14 +1,14 @@
 import Header from "../components/header/Header";
 import Content from "../components/content/Content";
 import styles from "../styles/home.module.scss";
-import variables from "../styles/variables.module.scss";
+import Wrapper from "../components/UI/Wrapper";
 
 const HomePage = function (props) {
   return (
-    <div className={`${styles.wrapper} ${variables["container--space"]}`}>
+    <Wrapper className={`${styles.wrapper}`}>
       <Header path={props.path} />
       <Content />
-    </div>
+    </Wrapper>
   );
 };
 

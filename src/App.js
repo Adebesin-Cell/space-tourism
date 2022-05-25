@@ -30,7 +30,17 @@ function App() {
       <Route
         path='/destination'
         element={<DestinationPage data={data.destinations} path={pathname} />}
-      ></Route>
+      >
+        <Route
+          path='/destination/mars'
+          element={
+            <DestinationPage
+              data={data.destinations}
+              path={pathname}
+            ></DestinationPage>
+          }
+        ></Route>
+      </Route>
       <Route
         path='/crew'
         element={<CrewPage data={data.crew} path={pathname} />}

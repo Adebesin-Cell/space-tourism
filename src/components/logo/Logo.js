@@ -1,4 +1,4 @@
-import { ReactComponent as Path } from "../../assets/images/logo.svg";
+import { ReactComponent as Path } from "../../assets/logo.svg";
 import styles from "./Logo.module.scss";
 
 const Logo = function () {
