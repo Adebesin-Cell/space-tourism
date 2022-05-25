@@ -5,5 +5,5 @@
 
 .content--space {
     padding-right: calc(var(--span-2xl) * 2.5 + var(--span-xs) + 5px);
-    padding-left: calc(var(--span-2xl) * 2.5 + var(--span-xs) + 5px);
+    padding-left: calc(var(--span-2xl) * 2.5 + var(--span-xs) - var(--span-xl));
 }
