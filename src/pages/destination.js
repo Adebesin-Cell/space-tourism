@@ -14,7 +14,7 @@ const DestinationPage = function (props) {
       <Title title={{ index: 1, name: "Pick your destination" }} />
       <Destination>
         <Details className={variables["content--space"]}>
-          <Tab data={props.data}></Tab>
+          <Tab path={props.path} data={props.data}></Tab>
         </Details>
       </Destination>
     </Wrapper>

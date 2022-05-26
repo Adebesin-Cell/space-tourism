@@ -13,8 +13,6 @@ function App() {
 
     const fetchedData = await response.json();
 
-    console.log(fetchedData);
-
     setData(fetchedData);
   }, []);
 
@@ -33,6 +31,24 @@ function App() {
       >
         <Route
           path='/destination/mars'
+          element={
+            <DestinationPage
+              data={data.destinations}
+              path={pathname}
+            ></DestinationPage>
+          }
+        ></Route>
+        <Route
+          path='/destination/europa'
+          element={
+            <DestinationPage
+              data={data.destinations}
+              path={pathname}
+            ></DestinationPage>
+          }
+        ></Route>
+        <Route
+          path='/destination/titan'
           element={
             <DestinationPage
               data={data.destinations}

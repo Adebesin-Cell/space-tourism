@@ -9,7 +9,10 @@ const NavLinks = [
 ];
 
 const Navigation = function (props) {
-  const isActiveIndex = NavLinks.findIndex((link) => link.url === props.path);
+  const isActiveIndex = NavLinks.findIndex(
+    (link) =>
+      link.url === props.path || props.path.includes(link.text.toLowerCase())
+  );
 
   return (
     <div className={styles.navigation}>
