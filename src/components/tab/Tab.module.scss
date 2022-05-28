@@ -1,8 +1,8 @@
 .tab {
-
     display: grid;
     grid-column: span 2;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: calc(2 * var(--span-xl));
 
     &--active {
         display: grid;
@@ -13,18 +13,17 @@
         display: block;
         width: 445px;
         height: 445px;
-        padding-bottom: calc(2 * var(--span-xl));
-        object-fit: contain;
+        object-fit: cover;
 
         &-box {
             display: flex;
+            padding-top: var(--span-m);
         }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
-        padding-bottom: calc(2 * var(--span-xl));
     }
 
     &__details {
@@ -54,6 +53,16 @@
         color: var(--tw__blue);
         max-width: 90%;
         padding-right: var(--span-2xl);
+    }
+
+    &__underline {
+        margin-top: var(--span-xl);
+        height: 1px;
+        max-width: calc(90% - 1.5 * var(--span-2xl));
+        background: var(--tw__underline);
+        border: none;
+        outline: none;
+        margin-bottom: var(--span-m);
     }
 }
 
@@ -122,5 +131,44 @@
                 opacity: 1 !important;
             }
         }
+    }
+}
+
+.info {
+    display: flex;
+    gap: calc(var(--span-2xl) + var(--span-xs));
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: var(--span-xs);
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: var(--span-xs);
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-family: "Barlow Condensed";
+        font-size: var(--size-s);
+        font-weight: var(--weight-sm);
+        line-height: 17px;
+        letter-spacing: 2.362499952316284px;
+        text-align: left;
+        color: var(--tw__blue);
+    }
+
+    &__paragraph {
+        text-transform: uppercase;
+        font-family: "Bellefair";
+        font-size: calc(var(--size-l) + 4px);
+        font-weight: var(--weight-sm);
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: var(--white);
     }
 }

@@ -78,6 +78,17 @@ const Tab = function ({ data }) {
           <div className={styles.tab__details}>
             <h1 className={styles.tab__heading}>{data[0].name}</h1>
             <p className={styles.tab__paragraph}>{data[0].description}</p>
+            <hr className={styles.tab__underline} />
+            <div className={styles.info}>
+              <div className={styles["info__left"]}>
+                <h3 className={styles.info__heading}>AVG. DISTANCE</h3>
+                <p className={styles.info__paragraph}>{data[0].distance}</p>
+              </div>
+              <div className={styles["info__right"]}>
+                <h3 className={styles.info__heading}>Est. travel time</h3>
+                <p className={styles.info__paragraph}>{data[0].travel}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,6 +151,17 @@ const Tab = function ({ data }) {
           <div className={styles.tab__details}>
             <h1 className={styles.tab__heading}>{data[1].name}</h1>
             <p className={styles.tab__paragraph}>{data[1].description}</p>
+            <hr className={styles.tab__underline} />
+            <div className={styles.info}>
+              <div className={styles["info__left"]}>
+                <h3 className={styles.info__heading}>AVG. DISTANCE</h3>
+                <p className={styles.info__paragraph}>{data[1].distance}</p>
+              </div>
+              <div className={styles["info__right"]}>
+                <h3 className={styles.info__heading}>Est. travel time</h3>
+                <p className={styles.info__paragraph}>{data[1].travel}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -202,6 +224,17 @@ const Tab = function ({ data }) {
           <div className={styles.tab__details}>
             <h1 className={styles.tab__heading}>{data[2].name}</h1>
             <p className={styles.tab__paragraph}>{data[2].description}</p>
+            <hr className={styles.tab__underline} />
+            <div className={styles.info}>
+              <div className={styles["info__left"]}>
+                <h3 className={styles.info__heading}>AVG. DISTANCE</h3>
+                <p className={styles.info__paragraph}>{data[2].distance}</p>
+              </div>
+              <div className={styles["info__right"]}>
+                <h3 className={styles.info__heading}>Est. travel time</h3>
+                <p className={styles.info__paragraph}>{data[2].travel}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,6 +297,17 @@ const Tab = function ({ data }) {
           <div className={styles.tab__details}>
             <h1 className={styles.tab__heading}>{data[3].name}</h1>
             <p className={styles.tab__paragraph}>{data[3].description}</p>
+            <hr className={styles.tab__underline} />
+            <div className={styles.info}>
+              <div className={styles["info__left"]}>
+                <h3 className={styles.info__heading}>AVG. DISTANCE</h3>
+                <p className={styles.info__paragraph}>{data[3].distance}</p>
+              </div>
+              <div className={styles["info__right"]}>
+                <h3 className={styles.info__heading}>Est. travel time</h3>
+                <p className={styles.info__paragraph}>{data[3].travel}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

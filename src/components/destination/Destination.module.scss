@@ -1,3 +1,8 @@
 .destination {
     padding-top: calc(var(--span-2xl) + 5px);
+
+    @media only screen and (min-width: 1800px) {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
 }

@@ -1,6 +1,11 @@
 .content {
     padding-top: calc(3 * var(--span-xl));
 
+    @media only screen and (min-width: 1800px) {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

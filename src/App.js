@@ -28,35 +28,7 @@ function App() {
       <Route
         path='/destination'
         element={<DestinationPage data={data.destinations} path={pathname} />}
-      >
-        <Route
-          path='/destination/mars'
-          element={
-            <DestinationPage
-              data={data.destinations}
-              path={pathname}
-            ></DestinationPage>
-          }
-        ></Route>
-        <Route
-          path='/destination/europa'
-          element={
-            <DestinationPage
-              data={data.destinations}
-              path={pathname}
-            ></DestinationPage>
-          }
-        ></Route>
-        <Route
-          path='/destination/titan'
-          element={
-            <DestinationPage
-              data={data.destinations}
-              path={pathname}
-            ></DestinationPage>
-          }
-        ></Route>
-      </Route>
+      ></Route>
       <Route
         path='/crew'
         element={<CrewPage data={data.crew} path={pathname} />}

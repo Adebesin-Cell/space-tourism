@@ -1,6 +1,11 @@
 .title {
     padding-top: calc(var(--span-2xl) + var(--span-xs));
 
+    @media only screen and (min-width: 1800px) {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
     &__heading {
         display: flex;
         gap: var(--span-m);
