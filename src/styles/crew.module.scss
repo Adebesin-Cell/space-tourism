@@ -4,17 +4,20 @@
     background-image: url(../assets/images/crew/background-crew-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1140px) {
         background-image: url(../assets/images/crew/background-crew-tablet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     @media only screen and (max-width: 600px) {
         background-image: url(../assets/images/crew/background-crew-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }

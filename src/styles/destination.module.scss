@@ -4,17 +4,20 @@
     background-image: url(../assets/images/destination/background-destination-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1140px) {
         background-image: url(../assets/images/destination/background-destination-tablet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     @media only screen and (max-width: 600px) {
         background-image: url(../assets/images/destination/background-destination-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }

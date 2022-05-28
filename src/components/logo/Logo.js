@@ -4,7 +4,7 @@ import styles from "./Logo.module.scss";
 const Logo = function () {
   return (
     <div className={styles.logo}>
-      <a href='/' className={styles["logo__link"]}>
+      <a href='/' name='Logo' className={styles["logo__link"]}>
         <Path />
       </a>
     </div>

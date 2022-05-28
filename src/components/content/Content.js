@@ -28,7 +28,11 @@ const Content = function () {
           </p>
         </div>
         <div className={styles["content__image-box"]}>
-          <Link to='/destination' className={styles.content__link}>
+          <Link
+            to='/destination'
+            name='Explore'
+            className={styles.content__link}
+          >
             <span className={styles["content__link--text"]}>Explore</span>
             <span className={styles["content__link--overlay"]}>&nbsp;</span>
           </Link>

@@ -6,9 +6,32 @@
         padding-left: 15%;
     }
 
+    @media only screen and (max-width: 1140px) {
+        padding-top: calc(2 * var(--span-xl));
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding-top: var(--span-2xl);
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @media only screen and (max-width:1140px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__box {
+        @media only screen and (max-width:1140px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__heading {
@@ -23,6 +46,16 @@
             line-height: 172px;
             letter-spacing: 0px;
             text-align: left;
+
+            @media only screen and (max-width: 1140px) {
+                padding-top: 0;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: calc(var(--size-m) * 5);
+                line-height: 100px;
+            }
         }
 
         &--tertiary {
@@ -32,6 +65,19 @@
             line-height: 34px;
             letter-spacing: 4.724999904632568px;
             color: var(--tw__blue);
+
+            @media only screen and (max-width: 1140px) {
+                font-size: calc(var(--size-m) + 4px);
+                line-height: 24px;
+                letter-spacing: 3.375px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: var(--size-m);
+                line-height: 19px;
+                letter-spacing: 2.7px;
+            }
         }
     }
 
@@ -45,12 +91,29 @@
         color: var(--tw__blue);
         padding-right: var(--span-s);
         max-width: 85%;
+
+        @media only screen and (max-width: 1140px) {
+            font-size: var(--size-m);
+            line-height: 28px;
+            text-align: center;
+            padding-right: 0;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            max-width: 100%;
+        }
     }
 
     &__image-box {
         display: flex;
         justify-content: flex-end;
         padding-top: calc(var(--span-2xl) + var(--span-xs));
+
+        @media only screen and (max-width: 1140px) {
+            justify-content: center;
+        }
     }
 
     &__link {
@@ -70,6 +133,20 @@
         text-align: center;
         text-decoration: none;
         color: var(--tw__black--2);
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 1024px) {
+            width: 242px;
+            height: 242px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            width: 150px;
+            height: 150px;
+            font-size: calc(var(--size-m) + 4px);
+            line-height: 23px;
+            letter-spacing: 1.25px;
+        }
 
         &--text {
             position: relative;

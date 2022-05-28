@@ -4,17 +4,21 @@
     background-image: url(../assets/images/home/background-home-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1140px) {
         background-image: url(../assets/images/home/background-home-tablet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 90px;
+        background-position: center;
     }
 
     @media only screen and (max-width: 600px) {
         background-image: url(../assets/images/home/background-home-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }

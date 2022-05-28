@@ -1,9 +1,20 @@
 .container--space {
     padding-top: var(--span-l);
     padding-left: calc(var(--span-xl) + 5px);
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .content--space {
     padding-right: calc(var(--span-2xl) * 2.5 + var(--span-xs) + 5px);
     padding-left: calc(var(--span-2xl) * 2.5 + var(--span-xs) - var(--span-xl));
+
+    @media only screen and (max-width: 600px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }

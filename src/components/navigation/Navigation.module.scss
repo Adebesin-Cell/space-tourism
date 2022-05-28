@@ -7,6 +7,14 @@
     padding-right: calc(2 * var(--span-2xl) + var(--span-xl));
     padding-left: calc(2 * var(--span-2xl));
 
+    @media only screen and (max-width: 1140px) {
+        padding: 0 var(--span-xl);
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+
     &__list {
         height: 100%;
         display: flex;
@@ -58,6 +66,10 @@
         text-align: left;
         color: var(--white);
         text-transform: uppercase;
+
+        @media only screen and (max-width: 1140px) {
+            display: none;
+        }
     }
 
     &__text {
@@ -69,5 +81,10 @@
         text-align: left;
         color: var(--white);
         text-transform: uppercase;
+
+        @media only screen and (max-width: 1140px) {
+            font-size: var(--size-s);
+            line-height: 17px;
+        }
     }
 }
