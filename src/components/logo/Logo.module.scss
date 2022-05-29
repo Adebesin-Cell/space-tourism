@@ -4,6 +4,10 @@
     align-items: center;
     margin-right: calc(var(--span-2xl) + 5px);
 
+    @media only screen and (max-width: 600px) {
+        margin-right: 0px;
+    }
+
     &__link {
         display: flex;
         justify-content: center;
