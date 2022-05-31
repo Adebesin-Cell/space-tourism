@@ -6,6 +6,16 @@
         padding-left: 15%;
     }
 
+    @media only screen and (max-width: 1140px) {
+        padding-top: var(--span-l);
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding-top: var(--span-m);
+    }
+
     &__heading {
         display: flex;
         gap: var(--span-m);
@@ -15,6 +25,19 @@
         letter-spacing: 4.724999904632568px;
         text-align: left;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 1140px) {
+            font-size: calc(var(--size-m) + 4px);
+            line-height: 24px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            font-size: var(--size-m);
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            justify-content: center;
+            gap: var(--span-xs);
+        }
 
         &--light {
             color: var(--tw__transparent-white);

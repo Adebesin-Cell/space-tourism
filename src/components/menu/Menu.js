@@ -21,6 +21,7 @@ const Menu = function (props) {
               className={`${styles.menu__link} ${
                 isActiveIndex === i ? styles["menu__link--active"] : ""
               }`}
+              onClick={props.close}
             >
               <span className={styles["menu__link--index"]}>
                 0{`${link.id}`}

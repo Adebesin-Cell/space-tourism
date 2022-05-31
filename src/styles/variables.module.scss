@@ -2,6 +2,11 @@
     padding-top: var(--span-l);
     padding-left: calc(var(--span-xl) + 5px);
 
+    @media only screen and (max-width: 1140px) {
+        padding-top: 0px;
+        padding-left: var(--span-xl);
+    }
+
     @media only screen and (max-width: 600px) {
         padding-top: 25px;
         padding-left: 25px;
