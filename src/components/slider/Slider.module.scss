@@ -81,6 +81,7 @@
     }
 
     &__dots {
+        padding-top: var(--span-s);
         position: absolute;
         left: 0;
         bottom: calc(var(--span-2xl) + var(--span-xl));

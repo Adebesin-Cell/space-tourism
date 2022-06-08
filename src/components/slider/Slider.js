@@ -57,7 +57,7 @@ const Slider = function (props) {
         ))}
       </div>
       <div className={styles.slides__dots}>
-        {props.data.map((item, i) => (
+        {props.data.map((_, i) => (
           <button
             key={i}
             data-index={i}
@@ -65,9 +65,7 @@ const Slider = function (props) {
               activeIndex === i ? styles["slides__dot--active"] : ""
             }`}
             onClick={switchIndexHandler}
-          >
-            &nbsp;
-          </button>
+          ></button>
         ))}
       </div>
     </div>
