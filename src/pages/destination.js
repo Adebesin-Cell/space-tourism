@@ -5,11 +5,15 @@ import Wrapper from "../components/UI/Wrapper";
 import Details from "../components/details/Details";
 import Destination from "../components/destination/Destination";
 import Tab from "../components/tab/Tab";
+import { Helmet } from "react-helmet";
 import variables from "../styles/variables.module.scss";
 
 const DestinationPage = function (props) {
   return (
     <Wrapper className={`${styles.wrapper}`}>
+      <Helmet>
+        <title> Destination | Space Tourism </title>
+      </Helmet>
       <Header path={props.path} />
       <Title title={{ index: 1, name: "Pick your destination" }} />
       <Destination>
