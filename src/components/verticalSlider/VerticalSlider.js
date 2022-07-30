@@ -65,7 +65,15 @@ const VerticalSlider = function (props) {
           >
             {props.data.map((item, i) => (
               <div key={i} className={styles.slider__item}>
-                <div className={styles.sldier__content}>&nbsp;</div>
+                <div className={styles.slider__content}>
+                  <div className={styles.slider__details}>
+                    <h3 className={styles.slider__title}>THE TERMINOLOGY…</h3>
+                    <h1 className={styles.slider__heading}>{item.name}</h1>
+                    <p className={styles.slider__paragraph}>
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
                 <div className={styles['slider__image--box']}>
                   <img
                     src={item.images.portrait}
