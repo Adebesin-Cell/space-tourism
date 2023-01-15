@@ -47,7 +47,7 @@ const Slider = function (props) {
               <h1 className={styles.slides__heading}>{item.name}</h1>
               <p className={styles.slides__paragraph}>{item.bio}</p>
               <SliderDots
-                className={`${styles['slides__dots--2']}`}
+                className={`${styles['slides__dots--2']} ${styles['slides__dots--tablet']}`}
                 data={props.data}
                 switchIndexHandler={switchIndexHandler}
                 activeIndex={activeIndex}
