@@ -23,6 +23,10 @@
     grid-template-columns: 80px repeat(2, 1fr);
     gap: 80px;
 
+    @media only screen and (min-width: 1800px) {
+        padding-left: 15%;
+    }
+
     @media only screen and (max-width: 1140px) {
         padding-left: 0px;
     }
