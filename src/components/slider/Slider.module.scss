@@ -22,6 +22,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         position: relative;
+
+        @media only screen and (max-width: 990px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__content {
@@ -30,6 +34,10 @@
         flex-direction: column;
         position: relative;
         white-space: initial;
+
+        @media only screen and (max-width: 990px) {
+            align-items: center;
+        }
     }
 
     &__title {
@@ -42,6 +50,10 @@
         text-align: left;
         opacity: 0.5;
         color: var(--white);
+
+        @media only screen and (max-width: 990px) {
+            text-align: center;
+        }
     }
 
     &__heading {
@@ -54,6 +66,10 @@
         text-align: left;
         text-transform: uppercase;
         color: var(--white);
+
+        @media only screen and (max-width: 990px) {
+            text-align: center;
+        }
     }
 
     &__paragraph {
@@ -67,10 +83,19 @@
         color: var(--tw__blue);
         padding-right: var(--span-l);
         max-width: 85%;
+
+        @media only screen and (max-width: 990px) {
+            text-align: center;
+            padding-right: 0;
+        }
     }
 
     &__image-box {
         display: flex;
+
+        @media only screen and (max-width: 990px) {
+            margin-top: var(--span-l);
+        }
     }
 
     &__image {
@@ -80,6 +105,12 @@
         object-fit: contain;
     }
 
+    &__dots--2 {
+        padding-top: var(--span-s);
+        display: flex;
+        gap: calc(var(--span-s) + 5px);
+    }
+
     &__dots {
         padding-top: var(--span-s);
         position: absolute;
@@ -87,6 +118,12 @@
         bottom: calc(var(--span-2xl) + var(--span-xl));
         display: flex;
         gap: calc(var(--span-s) + 5px);
+
+        &--desktop {
+            @media only screen and (max-width: 990px) {
+                display: none;
+            }
+        }
     }
 
     &__dot {
