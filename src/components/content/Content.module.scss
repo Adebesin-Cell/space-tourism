@@ -1,5 +1,8 @@
 .content {
     padding-top: calc(3 * var(--span-xl));
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
 
     @media only screen and (min-width: 1800px) {
         padding-right: 15%;
@@ -9,6 +12,12 @@
     @media only screen and (max-width: 1140px) {
         padding-top: calc(2 * var(--span-xl));
     }
+
+
+    @media only screen and (max-width: 768px) {
+        height: initial;
+    }
+
 
     @media only screen and (max-width: 600px) {
         padding-top: var(--span-2xl);

@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { useSwipeable } from "react-swipeable";
-import styles from "./Slider.module.scss";
+import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
+import styles from './Slider.module.scss';
+import SliderDots from './SliderDots';
 
 const Slider = function (props) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,11 +12,11 @@ const Slider = function (props) {
     },
     onSwipedRight: () => {
       updateIndex(activeIndex - 1);
-    },
+    }
   });
 
   if (!props.data) {
-    return <p style={{ color: "white" }}>Loading...</p>;
+    return <p style={{ color: 'white' }}>Loading...</p>;
   }
 
   const switchIndexHandler = function (e) {
@@ -45,8 +46,14 @@ const Slider = function (props) {
               <h3 className={styles.slides__title}>{item.role}</h3>
               <h1 className={styles.slides__heading}>{item.name}</h1>
               <p className={styles.slides__paragraph}>{item.bio}</p>
+              <SliderDots
+                className={`${styles['slides__dots--2']} ${styles['slides__dots--tablet']}`}
+                data={props.data}
+                switchIndexHandler={switchIndexHandler}
+                activeIndex={activeIndex}
+              />
             </div>
-            <div className={styles["slides__image-box"]}>
+            <div className={styles['slides__image-box']}>
               <img
                 src={item.images.png}
                 alt={item.name + ` - ${item.bio}`}
@@ -56,18 +63,12 @@ const Slider = function (props) {
           </div>
         ))}
       </div>
-      <div className={styles.slides__dots}>
-        {props.data.map((_, i) => (
-          <button
-            key={i}
-            data-index={i}
-            className={`${styles.slides__dot} ${
-              activeIndex === i ? styles["slides__dot--active"] : ""
-            }`}
-            onClick={switchIndexHandler}
-          ></button>
-        ))}
-      </div>
+      <SliderDots
+        className={`${styles.slides__dots} ${styles['slides__dots--desktop']}`}
+        data={props.data}
+        switchIndexHandler={switchIndexHandler}
+        activeIndex={activeIndex}
+      />
     </div>
   );
 };
