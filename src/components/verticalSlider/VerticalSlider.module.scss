@@ -142,3 +142,11 @@
         color: var(--tw__blue);
     }
 }
+
+.vertical {
+    display: none;
+
+    @media only screen and (max-width: 1140px) {
+        display: block;
+    }
+}
